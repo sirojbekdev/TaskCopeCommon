@@ -23,7 +23,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore TestCopeCommon/TestCopeCommon/TestCopeCommon.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build TestCopeCommon/TestCopeCommon/TestCopeCommon.csproj --no-restore 
     - name: Pack
       run: dotnet pack TestCopeCommon/TestCopeCommon/TestCopeCommon.csproj
     - name: Publish
