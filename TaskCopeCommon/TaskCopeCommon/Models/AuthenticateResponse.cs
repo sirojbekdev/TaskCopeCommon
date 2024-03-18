@@ -2,7 +2,7 @@
 
 namespace TaskCopeCommon.Models
 {
-    internal class AuthenticateResponse
+    public class AuthenticateResponse
     {
         public int Id { get; set; }
         public string Fullname { get; set; }

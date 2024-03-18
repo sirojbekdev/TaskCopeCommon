@@ -2,7 +2,7 @@
 
 namespace TaskCopeCommon.Models
 {
-    internal class AuthenticateRequest
+    public class AuthenticateRequest
     {
         [Required]
         public string Email { get; set; }
