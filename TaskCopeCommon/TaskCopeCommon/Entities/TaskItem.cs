@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
-using Posgres.Enums;
+using TaskCopeCommon.Enums;
 
-namespace Posgres.Entities
+namespace TaskCopeCommon.Entities
 {
     public class TaskItem
     {

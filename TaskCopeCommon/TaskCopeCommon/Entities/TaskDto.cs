@@ -1,6 +1,6 @@
-﻿using Posgres.Enums;
+﻿using TaskCopeCommon.Enums;
 
-namespace Posgres.Entities
+namespace TaskCopeCommon.Entities
 {
     public class TaskDto
     {

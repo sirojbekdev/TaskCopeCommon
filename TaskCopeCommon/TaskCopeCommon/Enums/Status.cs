@@ -1,4 +1,4 @@
-﻿namespace Posgres.Enums
+﻿namespace TaskCopeCommon.Enums
 {
     public enum Status
     {

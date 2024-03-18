@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Posgres.Entities
+namespace TaskCopeCommon.Entities
 {
     public class Role
     {
