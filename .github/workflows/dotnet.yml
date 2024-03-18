@@ -25,6 +25,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Pack
-      run: dotnet pack
+      run: dotnet pack TestCopeCommon/TestCopeCommon/TestCopeCommon.csproj
     - name: Publish
       run: dotnet nuget push "*.nupkg" -api-key oy2pznf66iu53jjhj75qz4i7tmfmxnhuhomp7cfidsizrq --source https://api.nuget.org/v3/index.json
