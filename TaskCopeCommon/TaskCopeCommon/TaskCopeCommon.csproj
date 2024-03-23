@@ -4,8 +4,6 @@
         <TargetFrameworks>net8.0;net6.0</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Version>$([System.DateTime]::Now.ToString("yyyy.MM.dd.HHmmss"))</Version>
     </PropertyGroup>
-    <Target Name="NugetPackAutoVersioning" BeforeTargets="Build">
-        <Exec Command="dotnet pack -p:PackageVersion=$([System.DateTime]::Now.ToString(&quot;yyyy.MM.dd.HHmm&quot;)) --no-build --configuration $(Configuration) --output &quot;$(SolutionDir)nuget&quot;" />
-    </Target>
 </Project>
