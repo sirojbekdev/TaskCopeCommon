@@ -16,10 +16,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Setup .NET
+    - name: Setup .NET 8
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+    - name: Setup .NET 6
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore TaskCopeCommon/TaskCopeCommon/TaskCopeCommon.csproj
     - name: Build
@@ -27,4 +31,4 @@ jobs:
     - name: Pack
       run: dotnet pack TaskCopeCommon/TaskCopeCommon/TaskCopeCommon.csproj
     - name: Publish
-      run: dotnet nuget push "**/*.nupkg" --api-key oy2pznf66iu53jjhj75qz4i7tmfmxnhuhomp7cfidsizrq --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push "**/*.nupkg" --api-key ${{ vars.APIKEY }} --skip-duplicate --source https://api.nuget.org/v3/index.json
