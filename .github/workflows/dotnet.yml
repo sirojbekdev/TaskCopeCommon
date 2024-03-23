@@ -27,4 +27,4 @@ jobs:
     - name: Pack
       run: dotnet pack TaskCopeCommon/TaskCopeCommon/TaskCopeCommon.csproj
     - name: Publish
-      run: dotnet nuget push "**/*.nupkg" --api-key oy2pznf66iu53jjhj75qz4i7tmfmxnhuhomp7cfidsizrq --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push "**/*.nupkg" --api-key ${{ vars.APIKEY }} --source https://api.nuget.org/v3/index.json
